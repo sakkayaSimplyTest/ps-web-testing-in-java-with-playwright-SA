@@ -1,4 +1,4 @@
-package com.pw;
+package com.pw.m2;
 
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
