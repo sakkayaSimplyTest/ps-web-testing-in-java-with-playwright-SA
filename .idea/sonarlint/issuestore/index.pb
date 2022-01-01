@@ -11,7 +11,5 @@ F
 src/web/css/heroes.css,c\e\ce65404c26d43ed954c1b9ef35484a1447d6a257
 M
 src/web/css/bootstrap.min.css,1\c\1cb6812e987b0a57690a0370bf487a8b68c187ec
-G
-src/web/advantages.html,0\3\0360276000c51daddd7d7e8e2a747f430c167a72
 A
 src/web/home.html,0\e\0e015cb11c28e0c565e3240a794d9ae12ac4dede
