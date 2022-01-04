@@ -5,4 +5,4 @@
 target/*
 
 # SonarLint issue files
-*.pb/
+*index.pb/

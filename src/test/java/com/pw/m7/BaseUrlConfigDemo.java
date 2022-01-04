@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 public class BaseUrlConfigDemo {
 
-    String base = "file:///" + System.getProperty("user.dir") + "\\src\\web\\";
+    private String base = "file:///" + System.getProperty("user.dir") + "\\src\\web\\";
 
     Playwright pw;
     Browser browser;
