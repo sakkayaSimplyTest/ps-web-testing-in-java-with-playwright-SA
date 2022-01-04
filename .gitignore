@@ -3,3 +3,6 @@
 /.idea/*
 *.iml
 target/*
+
+# SonarLint issue files
+*.pb/
