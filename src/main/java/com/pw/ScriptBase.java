@@ -8,10 +8,9 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class ScriptBase {
 
-    private final String webDir = "file:///" + System.getProperty("user.dir") + "\\src\\web\\";
-    protected String home = webDir + "home.html";
-    protected String advantages = webDir + "advantages.html";
-
+    private static final String webDir = "file:///" + System.getProperty("user.dir") + "\\src\\web\\";
+    public static final String home = webDir + "home.html";
+    public static String advantages = webDir + "advantages.html";
 
     protected static Playwright playwright;
     protected static Browser browser;
@@ -26,24 +25,24 @@ public class ScriptBase {
                 .launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
     }
 
-
     @BeforeEach
-    void createContextAndPage() {
+    protected void createContextAndPage() {
         context = browser.newContext();
         page = context.newPage();
-        page.setViewportSize(1920,1080);
+        page.setViewportSize(1920, 1080);
     }
 
     @AfterEach
     void closeContext() {
-        context.close();  // page i de kapatiyor
-    }
+        context.close();
+    }  // page i de kapatiyor
 
     @AfterAll
     static void closeBrowser() {
-//        browser.close();
-        playwright.close();           // browser.close(); u da kapsiyor                       playwright > browser > context > page
-    }
+        //        browser.close();
+        playwright.close();
+    }// browser.close(); u da kapsiyor                       playwright > browser > context > page
+
 
 
 }
